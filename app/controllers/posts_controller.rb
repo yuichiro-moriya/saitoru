@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.where("pref = ?", params[:pref])
+    @post = Post.find(params[:id])
   end
 
   def new
